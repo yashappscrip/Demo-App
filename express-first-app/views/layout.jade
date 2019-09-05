@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    ul
+      li First
+      li.
+       First Express JS
+      input(type='text' name='firstInput').className#idName
+      - var condition = true
+      if condition
+        p It's true
+      else
+        p It's false
+      -var array = [1,2,3]
+      each value in array
+       p=value
+    block anyContentName
